@@ -1,0 +1,134 @@
+/* modified_login_site (2).zip/modified_login_site/style.css */
+
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+html,body { 
+  height: 100%; 
+}
+body {
+  /* Instagramのフォントに近いもの */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  color: #262626; 
+  display: flex; /* 画面全体で中央寄せするためにflexを使用 */
+  flex-direction: column;
+  align-items: center; 
+  min-height: 100vh;
+}
+
+/* 🌟 メインコンテンツの幅と配置を固定 🌟 */
+.container {
+  /* フォームの幅をスマホサイズに固定 */
+  max-width: 350px; 
+  width: 100%;
+  
+  /* フォーム内の要素を縦に並べる */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px; 
+  
+  /* フッターを画面下部に配置するため、min-heightは削除 */
+  /* padding-topやmargin-topで上部の位置を調整する */
+}
+
+/* 🌟 ロゴのサイズと配置 🌟 */
+.top-space { 
+  height: 0; /* 不要 */
+} 
+.logo { 
+  width: 110px; /* ロゴの幅を調整 */
+  margin-top: 100px; /* 画面上部からの距離を大きく */
+  margin-bottom: 30px; 
+}
+
+/* フォームと入力欄の調整 */
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input {
+  width: 100%;
+  height: 44px; /* 入力欄の高さを調整 */
+  padding: 0 10px; 
+  margin: 4px 0; 
+  border-radius: 4px; 
+  border: 1px solid #dbdbdb; 
+  font-size: 15px; 
+  outline: none;
+  background: #fafafa; /* 背景色を薄いグレーに */
+}
+.input:focus {
+  border-color: #a8a8a8; /* フォーカス時の枠線を調整 */
+}
+
+/* ログインボタンの調整 */
+.btn {
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+.btn-primary {
+  width: 100%;
+  background: #0095f6; 
+  color: white;
+  margin-top: 8px; 
+  height: 44px; /* 高さを入力欄と揃える */
+  border-radius: 8px; 
+  font-weight: bold;
+}
+
+/* パスワードを忘れた場合のリンク */
+.helper {
+  margin-top: 16px; 
+  font-size: 13px; 
+  color: #00376b; 
+  font-weight: 500;
+}
+.helper a {
+  color: #00376b;
+  text-decoration: none;
+}
+
+/* 🌟 アカウント作成ボタンの境界線と配置 🌟 */
+.create-box {
+  width: 100%;
+  margin-top: 40px; 
+  display: flex;
+  justify-content: center;
+  /* 上下に区切り線を入れるため、上下にパディング */
+  padding: 40px 0; 
+  border-top: 1px solid #dbdbdb; 
+  border-bottom: 1px solid #dbdbdb; 
+}
+
+/* 新しいアカウントを作成ボタン */
+.btn-outline {
+  width: 100%;
+  height: 44px; 
+  background: transparent;
+  border: 1px solid #dbdbdb; /* 枠線が不要なため、枠線を削除 */
+  color: #0095f6;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none; /* 枠線を削除 */
+}
+
+/* 🌟 フッターの調整 (Meta) 🌟 */
+.footer {
+  /* position: fixed; は使用せず、margin-top: auto で画面下部に配置 */
+  margin-top: auto; 
+  padding-bottom: 20px; 
+  color: #8e8e8e;
+  font-size: 12px;
+}
+.brand {
+  font-weight: 600; 
+}
